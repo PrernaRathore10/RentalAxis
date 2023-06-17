@@ -1,0 +1,149 @@
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: center;
+    margin: 0px 0px;
+    contain-intrinsic-height: 100%;
+  }
+  nav ul {
+    justify-content: center;
+    height: 17px;
+  }
+  .slider img {
+    width: 283px;
+  }
+  .search {
+    justify-content: center;
+  }
+  .search input {
+    margin: 12px 16px;
+  }
+  .card-item img {
+    height: 105px;
+    margin: 0px 1vw;
+    width: 75px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #2874f0;
+  color: white;
+}
+nav ul {
+  height: 12vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 25px;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 23px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(250, 250, 252);
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  padding-right: 76px;
+  border-left-width: 0px;
+  border-left-style: solid;
+  padding-left: 18px;
+  padding-bottom: -42px;
+  padding-top: 0px;
+  margin-right: 0px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  height: 103px;
+  width: 195px;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 8vh;
+  width: 30vw;
+}
+.btn {
+  margin: 0 22px;
+  padding: 0px 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.slider {
+  padding-left: 0px;
+  border-left-width: 104px;
+  border-left-style: solid;
+  margin-left: -104px;
+  margin-right: 0px;
+  margin-top: -12px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  padding-right: -15px;
+  padding-bottom: 0px;
+  height: auto;
+  border-right-width: 104px;
+  border-right-style: solid;
+}
+
+img {
+  /* height: 100%; */
+  width: 100%;
+}
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 12vw;
+  margin: 0 28px;
+}
+.card-item img {
+  height: 159px;
+  margin: 0px 1vw;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  min-height: calc(100vh - 12vh - 12vh);
+}
+footer {
+  height: 12vh;
+  background-color: #2874f0;
+  color: white;
+}
+
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-image: url("image\image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
