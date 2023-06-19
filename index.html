@@ -1,785 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon-32x32.png"
-    />
-
-    <script defer src="script.js"></script>
-
-    <title>Frontend Mentor | E-commerce product page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="body-wrapper"></div>
-
-    <!-- Overlay image Modal -->
-    <div class="overlay-container">
-      <div class="item-overlay">
-        <button class="item-overlay__btn">
-          <img
-            src="icon-close.svg"
-            alt="close image"
-            class="item-overlay__btn-img"
-          />
-        </button>
-        <div class="item-overlay__mainImg">
-          <img
-            src="image-product-1.jpg"
-            alt=""
-            class="item-overlay__img"
-          />
-          <button class="item-overlay__btnlft overlay-btn">
-            <img
-              src="icon-next.svg"
-              alt="next symbol image"
-              class="item-overlay__btnlft-img overlay-btn__img"
-            />
-          </button>
-          <button class="item-overlay__btnrgt overlay-btn">
-            <img
-              src="icon-next.svg"
-              alt="next symbol image"
-              class="item-overlay__btnrgt-img overlay-btn__img"
-            />
-          </button>
-        </div>
-        <div class="overlay-img__btns">
-          <button class="overlay-img__btn" data-img="0">
-            <img
-              src="image-product-1-thumbnail.jpg"
-              alt="shoe product image"
-              class="overlay-img__btn-img"
-            />
-          </button>
-          <button class="overlay-img__btn" data-img="1">
-            <img
-              src="image-product-2-thumbnail.jpg"
-              alt="shoe product image"
-              class="overlay-img__btn-img"
-            />
-          </button>
-          <button class="overlay-img__btn" data-img="2">
-            <img
-              src="image-product-3-thumbnail.jpg"
-              alt="shoe product image"
-              class="overlay-img__btn-img"
-            />
-          </button>
-          <button class="overlay-img__btn" data-img="3">
-            <img
-              src="image-product-4-thumbnail.jpg"
-              alt="shoe product image"
-              class="overlay-img__btn-img"
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cart -->
-    <div class="head-cart">
-      <h3 class="head-cart__heading">Cart</h3>
-      <div class="head-cart__txt">Your cart is empty.</div>
-      <div class="head-cart__item">
-        <div class="head-cart__item-wrapper">
-          <img
-            src="image-product-1-thumbnail.jpg"
-            alt="cart product image"
-            class="head-cart__item-img"
-          />
-          <div class="head-cart__des">
-            <p class="head-cart__des-txt">Fall Limited Edition Sneakers</p>
-            <div class="head-cart__price">
-              <span class="head-cart__price-single">$125.00*3</span>
-              <span class="head-cart__price-total">$375.00</span>
-            </div>
-          </div>
-          <button class="head-cart__item-btn">
-            <img
-              src="icon-delete.svg"
-              alt="delete image"
-              class="head-cart__btn-img"
-            />
-          </button>
-        </div>
-
-        <button class="head-cart__btn btn--orange">Checkout</button>
-      </div>
-    </div>
-
-    <!-- Header -->
-    <header class="head">
-      <div class="head-lft">
-        <button class="head-lft__btn">
-          <img
-            src="icon-menu.svg"
-            alt="menu image"
-            class="head-lft__btn-img"
-          />
-        </button>
-        <img src="logo.svg" alt="logo" class="head-logo" />
-        <ul class="head-nav">
-          <li class="head-nav__item">Collections</li>
-          <li class="head-nav__item">Men</li>
-          <li class="head-nav__item">Women</li>
-          <li class="head-nav__item">About</li>
-          <li class="head-nav__item">Contact</li>
-        </ul>
-      </div>
-
-      <div class="head-rgt">
-        <button class="head-rgt__btn">
-          <img
-            src="icon-cart.svg"
-            alt="cart image"
-            class="head-cart__btn-img"
-          />
-        </button>
-
-        <img
-          src="image-avatar.png"
-          alt="person image"
-          class="head-rgt__img"
-        />
-      </div>
-    </header>
-
-
-
-
-
-  <!--
-    - MAIN
-  -->
-
-  <main>
-
-    <!--
-      - BANNER
-    -->
-
-    <div class="banner">
-
-      <div class="container">
-
-        <div class="slider-container has-scrollbar">
-
-          <div class="slider-item">
-
-            <img src="mm_1770x.webp" alt="women's latest fashion sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Student-friendly Laptops</p>
-
-              <h2 class="banner-title">Power up your college experience</h2>
-
-              <p class="banner-text">
-                starting at ₹ <b>40,000</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Buy Now</a>
-
-            </div>
-
-          </div>
-
-          <div class="slider-item">
-
-            <img src="slider-bg-2.png" alt="modern sunglasses" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">Level up your college game with book rentals</p>
-
-              <h2 class="banner-title">Unlock Knowledge</h2>
-
-              <p class="banner-text">
-                starting at ₹ <b>500</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Rent now</a>
-
-            </div>
-
-          </div>
-
-          <div class="slider-item">
-
-            <img src="school-stationery-supplies-medical-masks-260nw-1722813553.webp" alt="new fashion summer sale" class="banner-img">
-
-            <div class="banner-content">
-
-              <p class="banner-subtitle">How about renting or buying those from your college mates?</p>
-
-              <h2 class="banner-title">Need some studying stuff?</h2>
-
-              <p class="banner-text">
-                starting at ₹<b>20</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Buy now</a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-    <!--
-      - CATEGORY
-    -->
-
-    <div class="category">
-
-      <div class="container">
-
-        <div class="category-item-container has-scrollbar">
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="71Hx1SjCFIL._AC_UF1000,1000_QL80_.jpg" alt="dress & frock" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Laptops</h3>
-
-                <p class="category-item-amount">(53)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="images.jpg" alt="winter wear" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Bag</h3>
-
-                <p class="category-item-amount">(58)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="intelligent-user-friendly.png" alt="glasses & lens" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Water Bottles</h3>
-
-                <p class="category-item-amount">(68)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="add-achiever-gel-pen-736708.webp" alt="shorts & jeans" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Pen</h3>
-
-                <p class="category-item-amount">(84)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="download.jpg" alt="t-shirts" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Notebook</h3>
-
-                <p class="category-item-amount">(35)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="attachment_97477487.jpg" alt="jacket" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">HTML-Book</h3>
-
-                <p class="category-item-amount">(16)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="images (1).jpg" alt="watch" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Watch</h3>
-
-                <p class="category-item-amount">(27)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="images (2).jpg" alt="hat & caps" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Study Table</h3>
-
-                <p class="category-item-amount">(39)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-    <!--
-      - PRODUCT
-    -->
-
-    <div class="product-container">
-
-      <div class="container">
-
-
-        <!--
-          - SIDEBAR
-        -->
-
-        <div class="sidebar  has-scrollbar" data-mobile-menu>
-
-          <div class="sidebar-category">
-
-            <div class="sidebar-top">
-              <h2 class="sidebar-title">Category</h2>
-
-              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </div>
-
-            <ul class="sidebar-menu-category-list">
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="71Hx1SjCFIL._AC_UF1000,1000_QL80_.jpg" alt="clothes" width="20" height="20"
-                      class="menu-title-img">
-
-                    <p class="menu-title">Laptops</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Acer</p>
-                      <data value="300" class="stock" title="Available Stock">300</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">HP</p>
-                      <data value="60" class="stock" title="Available Stock">60</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Apple</p>
-                      <data value="50" class="stock" title="Available Stock">50</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Dell</p>
-                      <data value="87" class="stock" title="Available Stock">87</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="add-achiever-gel-pen-736708.webp" alt="footwear" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Stationery</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Sports</p>
-                      <data value="45" class="stock" title="Available Stock">45</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Formal</p>
-                      <data value="75" class="stock" title="Available Stock">75</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Casual</p>
-                      <data value="35" class="stock" title="Available Stock">35</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Safety Shoes</p>
-                      <data value="26" class="stock" title="Available Stock">26</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="intelligent-user-friendly.png" alt="clothes" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Water Bottles</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Earrings</p>
-                      <data value="46" class="stock" title="Available Stock">46</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Couple Rings</p>
-                      <data value="73" class="stock" title="Available Stock">73</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Necklace</p>
-                      <data value="61" class="stock" title="Available Stock">61</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="attachment_97477487.jpg" alt="perfume" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Books</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Clothes Perfume</p>
-                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Deodorant</p>
-                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">jacket</p>
-                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">dress & frock</p>
-                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="download.png" alt="cosmetics" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Keyboard & Mouse</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Gaming Keyboard</p>
-                      <data value="68" class="stock" title="Available Stock">68</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Gaming Mouse</p>
-                      <data value="46" class="stock" title="Available Stock">46</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Acer Keyboard</p>
-                      <data value="79" class="stock" title="Available Stock">79</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">HP Mouse</p>
-                      <data value="23" class="stock" title="Available Stock">23</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="images (3).jpg" alt="glasses" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Phones</p>
-                  </div>
-
-      <section class="price">
-        <h2 class="price-sub__heading">Sneaker Company</h2>
-        <h1 class="price-main__heading">Fall Limited Edition Sneakers</h1>
-        <p class="price-txt">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
-        <div class="price-box">
-          <div class="price-box__main">
-            <span class="price-box__main-new">$125.00</span>
-            <span class="price-box__main-discount"> 50%</span>
-          </div>
-          <span class="price-box__old">$250.00</span>
-        </div>
-
-        <div class="price-btnbox">
-          <div class="price-btns">
-            <button class="price-btn__add price-btn">
-              <img
-                src="icon-plus.svg"
-                alt="plus sign"
-                class="price-btn__add-img price-btn__img"
-              />
-            </button>
-            <span class="price-btn__txt">0</span>
-            <button class="price-btn__remove price-btn">
-              <img
-                src="icon-minus.svg"
-                alt="minus sign"
-                class="price-btn__remove-img price-btn__img"
-              />
-            </button>
-          </div>
-          <button class="price-cart__btn btn--orange">
-            <img
-              src="icon-cart.svg"
-              alt="cart image"
-              class="price-cart__btn-img"
-            />
-            Add to cart
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <!-- Attribution -->
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">venkatesh.b</a>.
-    </div>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -924,7 +144,7 @@
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="#" class="social-link">buy
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -1121,7 +341,7 @@
 
                 <li class="panel-list-item">
                   <a href="#">
-                    <img src="mobile-banner-7f64e18f-4584-4852-b81d-cb99dbc73586-7113b884-7fcb-466a-95fb-2e7b03ef2adc.jpg" alt="men's fashion" width="250" height="119">
+                    <img src="Code-complete-1024x576.webp" alt="men's fashion" width="250" height="119">
                   </a>
                 </li>
 
@@ -1155,7 +375,7 @@
 
                 <li class="panel-list-item">
                   <a href="#">
-                    <img src="Code-complete-1024x576.webp" alt="women's fashion" width="250" height="119">
+                    <img src="61tV07vXkIL._AC_UF1000,1000_QL80_DpWeblab_ copy.jpg" alt="women's fashion" width="250" height="119">
                   </a>
                 </li>
 
@@ -1197,7 +417,7 @@
 
                 <li class="panel-list-item">
                   <a href="#">
-                    <img src="feature-Matt-Magic_pop-01.jpg" alt="mouse collection" width="250" height="119">
+                    <img src="mobile-banner-7f64e18f-4584-4852-b81d-cb99dbc73586-7113b884-7fcb-466a-95fb-2e7b03ef2adc.jpg" alt="mouse collection" width="250" height="119">
                   </a>
                 </li>
 
@@ -1651,15 +871,15 @@
 
             <div class="banner-content">
 
-              <p class="banner-subtitle">Student-friendly laptops</p>
+              <p class="banner-subtitle">Student-friendly Laptops</p>
 
-              <h2 class="banner-title">Power up your college experience!</h2>
+              <h2 class="banner-title">Power up your college experience</h2>
 
               <p class="banner-text">
                 starting at ₹ <b>40,000</b>.00
               </p>
 
-              <a href="#" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Buy Now</a>
 
             </div>
 
@@ -1667,19 +887,19 @@
 
           <div class="slider-item">
 
-            <img src="slider-bg-2.png" alt="modern sunglasses" class="banner-img">
+            <img src="school-stationery-supplies-medical-masks-260nw-1722813553.webp" alt="modern sunglasses" class="banner-img">
 
             <div class="banner-content">
 
-              <p class="banner-subtitle">Level up your college game with renting book</p>
+              <p class="banner-subtitle">Level up your college game with book rentals</p>
 
-              <h2 class="banner-title">Rent Books</h2>
+              <h2 class="banner-title">Unlock Knowledge</h2>
 
               <p class="banner-text">
-                starting at ₹ <b>150</b>.00
+                starting at ₹ <b>500</b>.00
               </p>
 
-              <a href="#" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Rent now</a>
 
             </div>
 
@@ -1687,7 +907,7 @@
 
           <div class="slider-item">
 
-            <img src="school-stationery-supplies-medical-masks-260nw-1722813553.webp" alt="loading img" class="banner-img">
+            <img src="Back-to-School-Slider-web.jpg" alt="new fashion summer sale" class="banner-img">
 
             <div class="banner-content">
 
@@ -1699,7 +919,7 @@
                 starting at ₹<b>20</b>.00
               </p>
 
-              <a href="#" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Buy now</a>
 
             </div>
 
@@ -2428,14 +1648,14 @@
                     <div class="showcase-content">
 
                       <a href="#">
-                        <h4 class="showcase-title">Relaxed Short full Sleeve T-Shirt</h4>
+                        <h4 class="showcase-title">AMERICAN TOURISTER Women Solid Laptop Backpack</h4>
                       </a>
 
-                      <a href="#" class="showcase-category">Clothes</a>
+                      <a href="#" class="showcase-category">Laptop Backpack</a>
 
                       <div class="price-box">
-                        <p class="price">$45.00</p>
-                        <del>$12.00</del>
+                        <p class="price">₹1599.00</p>
+                        <del>₹1190.00</del>
                       </div>
 
                     </div>
@@ -2457,8 +1677,8 @@
                       <a href="#" class="showcase-category">Clothes</a>
                   
                       <div class="price-box">
-                        <p class="price">$61.00</p>
-                        <del>$9.00</del>
+                        <p class="price">₹61.00</p>
+                        <del>₹9.00</del>
                       </div>
                   
                     </div>
@@ -2475,14 +1695,14 @@
                     <div class="showcase-content">
                   
                       <a href="#">
-                        <h4 class="showcase-title">Black Floral Wrap Midi Skirt</h4>
+                        <h4 class="showcase-title">Zebronics Zeb-Transformer Gaming Keyboard and Mouse Combo (USB, Braided Cable)</h4>
                       </a>
                   
-                      <a href="#" class="showcase-category">Clothes</a>
+                      <a href="#" class="showcase-category">Gaming Keyboard and Mouse</a>
                   
                       <div class="price-box">
-                        <p class="price">$76.00</p>
-                        <del>$25.00</del>
+                        <p class="price">₹1100.00</p>
+                        <del>₹990.00</del>
                       </div>
                   
                     </div>
@@ -2499,14 +1719,14 @@
                     <div class="showcase-content">
                   
                       <a href="#">
-                        <h4 class="showcase-title">Pure Garment Dyed Cotton Shirt</h4>
+                        <h4 class="showcase-title">Acer Predator Helios 300 PH315-53-72E9 (NH.QA4SI.001) Laptop Intel Core i7-10750H (10th Gen) NVIDIA Geforce RTX 2060 16GB 1TB HDD + 256GB SSD Windows 10 </h4>
                       </a>
                   
-                      <a href="#" class="showcase-category">Mens Fashion</a>
+                      <a href="#" class="showcase-category">Acer Laptop Intel Core i7 </a>
                   
                       <div class="price-box">
-                        <p class="price">$68.00</p>
-                        <del>$31.00</del>
+                        <p class="price">₹68990.00</p>
+                        <del>₹59890.00</del>
                       </div>
                   
                     </div>
@@ -2527,14 +1747,14 @@
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                        <h4 class="showcase-title"> Vivo Y20 (Nebula Blue, 64GB, 4GB RAM)</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Winter wear</a>
+                      <a href="#" class="showcase-category">Vivo Y20 Mobile</a>
                 
                       <div class="price-box">
-                        <p class="price">$61.00</p>
-                        <del>$11.00</del>
+                        <p class="price">₹21900.00</p>
+                        <del>₹20290.00</del>
                       </div>
                 
                     </div>
@@ -2551,14 +1771,14 @@
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">(HAMMERED) STEEL WATER BOTTEL 1 LITRE (APPROX) FRIDGE BOTTLE SPORTS GYM OFFICE 1000ml Bottle (pack of 1,Silver,Steel)</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Winter wear</a>
+                      <a href="#" class="showcase-category">STEEL WATER BOTTEL</a>
                 
                       <div class="price-box">
-                        <p class="price">$32.00</p>
-                        <del>$20.00</del>
+                        <p class="price">₹290.00</p>
+                        <del>₹229.00</del>
                       </div>
                 
                     </div>
@@ -2575,14 +1795,14 @@
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">PLIXIO Aluminum Tabletop Laptop Stand Ergonomic Foldable Portable Laptop Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Sliver)</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Jackets</a>
+                      <a href="#" class="showcase-category">Laptop Stand </a>
                 
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$25.00</del>
+                        <p class="price">₹799.00</p>
+                        <del>₹689.00</del>
                       </div>
                 
                     </div>
@@ -2599,14 +1819,14 @@
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Better Basics French Terry Sweatshorts</h4>
+                        <h4 class="showcase-title">Bennett™ Mystic Formal Business Briefcase Bag Crossbody Messenger College Bags For Men Women MacBook INoteBook ITablet Laptop Upto 15.6 Inch | Handbags with Shoulder Straps (Blue) 6 Months Warranty</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Shorts</a>
+                      <a href="#" class="showcase-category">Formal Business Briefcase Bag</a>
                 
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$10.00</del>
+                        <p class="price">₹1900.00</p>
+                        <del>₹1590.00</del>
                       </div>
                 
                     </div>
@@ -2637,14 +1857,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Running & Trekking Shoes - White</h4>
+                        <h4 class="showcase-title">Classmate Notebook - Single Line, 384 Pages, 314mm*194mm (Pack of 6) - Assorted Design</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category">Classmate Notebook </a>
             
                       <div class="price-box">
-                        <p class="price">$49.00</p>
-                        <del>$15.00</del>
+                        <p class="price">₹490.00</p>
+                        <del>₹445.00</del>
                       </div>
             
                     </div>
@@ -2661,14 +1881,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Trekking & Running Shoes - black</h4>
+                        <h4 class="showcase-title"> Premium Metallic colour Pens Fine Tip 10 colours Glitter Paint Pen Window Marker for DIY Card Making Coloring Books Scrapbook Photo Album Rock Art 2 mm fine tips</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category"> Metallic colour Pens</a>
             
                       <div class="price-box">
-                        <p class="price">$78.00</p>
-                        <del>$36.00</del>
+                        <p class="price">₹189.00</p>
+                        <del>₹136.00</del>
                       </div>
             
                     </div>
@@ -2691,8 +1911,8 @@
                       <a href="#" class="showcase-category">Party wear</a>
             
                       <div class="price-box">
-                        <p class="price">$94.00</p>
-                        <del>$42.00</del>
+                        <p class="price">₹94.00</p>
+                        <del>₹42.00</del>
                       </div>
             
                     </div>
@@ -2715,8 +1935,8 @@
                       <a href="#" class="showcase-category">Sports</a>
             
                       <div class="price-box">
-                        <p class="price">$54.00</p>
-                        <del>$65.00</del>
+                        <p class="price">₹54.00</p>
+                        <del>₹65.00</del>
                       </div>
             
                     </div>
@@ -2737,14 +1957,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Air Trekking Shoes - white</h4>
+                        <h4 class="showcase-title">Cello Zapp Pastels Gel Pens| Pack of 25|20 Blue and 5 Black Gel pens| Gel Pens Set for Students | Gel Pens for School Use| Gel Pens for Writing Pens</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Sports</a>
+                      <a href="#" class="showcase-category"> Gel Pens Set</a>
             
                       <div class="price-box">
-                        <p class="price">$52.00</p>
-                        <del>$55.00</del>
+                        <p class="price">₹520.00</p>
+                        <del>₹455.00</del>
                       </div>
             
                     </div>
@@ -2760,14 +1980,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Boot With Suede Detail</h4>
+                        <h4 class="showcase-title">Cello Orly Gel Pens Jar| 25 BLUE & 5 BLACK Ink Pens I Aesthetic gel pen for students| 0.6mm Tip Size | Gel pens set</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">boots</a>
+                      <a href="#" class="showcase-category">Gel Pens</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p class="price">₹120.00</p>
+                        <del>₹110.00</del>
                       </div>
             
                     </div>
@@ -2784,14 +2004,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Men's Leather Formal Wear shoes</h4>
+                        <h4 class="showcase-title">Cello Orly Gel Pens Jar| 25 BLUE & 5 BLACK Ink Pens I Aesthetic gel pen for students| 0.6mm Tip Size | Gel pens set</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">formal</a>
+                      <a href="#" class="showcase-category">Cello Orly Gel Pens </a>
             
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
+                        <p class="price">₹289.00</p>
+                        <del>₹278.00</del>
                       </div>
             
                     </div>
@@ -2807,14 +2027,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Casual Men's Brown shoes</h4>
+                        <h4 class="showcase-title">Book Birds Stationery kit Combo Set for Job aspirants, School Students, Office and Home Usage (23)</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Casual</a>
+                      <a href="#" class="showcase-category">Stationery kit </a>
             
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$55.00</del>
+                        <p class="price">₹1289.00</p>
+                        <del>₹1124.00</del>
                       </div>
             
                     </div>
@@ -2845,14 +2065,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Pocket Watch Leather Pouch</h4>
+                        <h4 class="showcase-title">Acer Aspire 5 Gaming Laptop Intel Core i5 12th gen (12-Cores) Processor (16 GB/512 GB SSD/Win11 Home/4GB Graphics/RTX 2050) A515-57G (15.6" FHD Display, 1.8 Kg)</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Watches</a>
+                      <a href="#" class="showcase-category">Acer Aspire 5</a>
             
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$34.00</del>
+                        <p class="price">75400.00</p>
+                        <del>₹68990.00</del>
                       </div>
             
                     </div>
@@ -2869,14 +2089,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Silver Deer Heart Necklace</h4>
+                        <h4 class="showcase-title">Smart Watch for Men - D20 Bluetooth Smartwatch Touch Screen Bluetooth Smart Watches for Android iOS Phones Wrist Phone Watch, Heart Rate & SpO2 Level Monitor, Multiple Watch Faces, Activity Tracker, Multiple Sports Modes </h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Jewellery</a>
+                      <a href="#" class="showcase-category">Smartwatch Touch Screen Bluetooth Smart Watches & Android iOS</a>
             
                       <div class="price-box">
-                        <p class="price">$84.00</p>
-                        <del>$30.00</del>
+                        <p class="price">₹4590.00</p>
+                        <del>₹3478.00</del>
                       </div>
             
                     </div>
@@ -2893,14 +2113,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Titan 100 Ml Womens Perfume</h4>
+                        <h4 class="showcase-title">Nataraj Bear 35 Pieces Professional Drawing Pencils and Sketch Kit for Artist(Black)</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Perfume</a>
+                      <a href="#" class="showcase-category">Nataraj kit</a>
             
                       <div class="price-box">
-                        <p class="price">$42.00</p>
-                        <del>$10.00</del>
+                        <p class="price">₹429.00</p>
+                        <del>₹409.00</del>
                       </div>
             
                     </div>
@@ -2917,14 +2137,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Men's Leather Reversible Belt</h4>
+                        <h4 class="showcase-title">Brand: HORIZEN 3 HORIZEN Chronograph Analogue Men’s Luxury Watch (Blue Dial)</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Belt</a>
+                      <a href="#" class="showcase-category">Analogue Men’s Luxury Watch </a>
             
                       <div class="price-box">
-                        <p class="price">$24.00</p>
-                        <del>$10.00</del>
+                        <p class="price">₹458.00</p>
+                        <del>₹454.00</del>
                       </div>
             
                     </div>
@@ -2945,14 +2165,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">platinum Zircon Classic Ring</h4>
+                        <h4 class="showcase-title">PYTHON: PROGRAMMING: A BEGINNER’S GUIDE TO LEARN PYTHON IN 7 DAYS</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">jewellery</a>
+                      <a href="#" class="showcase-category">PYTHON PROGRAMMING BOOK</a>
             
                       <div class="price-box">
-                        <p class="price">$62.00</p>
-                        <del>$65.00</del>
+                        <p class="price">562.00</p>
+                        <del>₹485.00</del>
                       </div>
             
                     </div>
@@ -2968,14 +2188,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Smart watche Vital Plus</h4>
+                        <h4 class="showcase-title">C++ Programming:An Object-Oriented Approach</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">Watches</a>
+                      <a href="#" class="showcase-category">C++ Programming Book</a>
             
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
+                        <p class="price">₹756.00</p>
+                        <del>₹678.00</del>
                       </div>
             
                     </div>
@@ -2992,14 +2212,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">shampoo conditioner packs</h4>
+                        <h4 class="showcase-title">R.S. Aggarwal 7,070 A Modern Approach To Logical Reasoning 2 Colour Edition - 1 January 2018</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">cosmetics</a>
+                      <a href="#" class="showcase-category">R.S. Aggarwal Book 2018</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p class="price">₹520.00</p>
+                        <del>₹489.00</del>
                       </div>
             
                     </div>
@@ -3016,14 +2236,14 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Rose Gold Peacock Earrings</h4>
+                        <h4 class="showcase-title">Quantitative Aptitude Book for Competitive Examinations  Book by R.S. Aggarwal</h4>
                       </a>
             
-                      <a href="#" class="showcase-category">jewellery</a>
+                      <a href="#" class="showcase-category">Quantitative Aptitude Book - R.S. Aggarwal</a>
             
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p class="price">₹20.00</p>
+                        <del>₹30.00</del>
                       </div>
             
                     </div>
@@ -3077,9 +2297,9 @@
                     </p>
 
                     <div class="price-box">
-                      <p class="price">$150.00</p>
+                      <p class="price">₹150.00</p>
 
-                      <del>$200.00</del>
+                      <del>₹200.00</del>
                     </div>
 
                     <button class="add-cart-btn">add to cart</button>
@@ -3166,8 +2386,8 @@
                     </p>
               
                     <div class="price-box">
-                      <p class="price">$1990.00</p>
-                      <del>$2000.00</del>
+                      <p class="price">₹1990.00</p>
+                      <del>₹2000.00</del>
                     </div>
               
                     <button class="add-cart-btn">add to cart</button>
