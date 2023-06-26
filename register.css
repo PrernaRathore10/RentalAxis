@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: #4372EE;
+  background: #4372ee;
 }
 .container {
   position: relative;
@@ -60,7 +60,6 @@ body {
   column-gap: 15px;
 }
 
-
 .address :where(input, .select-box) {
   margin-top: 15px;
 }
@@ -82,7 +81,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #4372EE;
+  background: #4372ee;
 }
 .form button:hover {
   background: #3365f1;
@@ -92,4 +91,24 @@ body {
   .form .column {
     flex-wrap: wrap;
   }
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 20px;
+  margin-left: 126px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-container label,
+.form-container input[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="file"] {
+  margin-top: 20px;
 }
